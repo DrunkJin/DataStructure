@@ -1,0 +1,22 @@
+ADT란? 추상 자료형!
+구체적인 구현 코드는 숨겨져있는 것
+
+객체 : 0에서 시작하여 INT_MAX까지의 순서화된 정수의 부분 범위
+
+::~ 설명 : ~로 정의된다를 의미한다.
+
+Nat_Number zero()   ::=0
+Nat_Number successor(x) ::= if( x==INT_MAX ) return x
+                            else return x+1
+
+Boolean is_zero(x)  ::= if (x) return FALSE
+                            else return TRUE
+
+Boolean equal(x,y)  ::= if (x==y) return TRUE
+                        else return FALSE
+
+Nat_Number add(x,y) ::= if( (x+y) <= INT_MAX )
+                        return x+y
+
+Nat_Number sub(x,y) ::= if ( x<y ) return 0
+                        else return x-y;
