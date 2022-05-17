@@ -19,4 +19,8 @@ Nat_Number add(x,y) ::= if( (x+y) <= INT_MAX )
                         return x+y
 
 Nat_Number sub(x,y) ::= if ( x<y ) return 0
-                        else return x-y;
+                        else return x-y
+
+Nat_Number is_greater   ::= if ( x>y ) return x
+                            else if ( x<y ) return y
+                            else return 0
