@@ -1,0 +1,37 @@
+01. 2개의 정수를 서로 교환하는 알고리즘을 의사 코드로 작성해보자.
+    change(A,B)
+        temp <- A  // temp 변수에 A를 저장
+        A <- B     // A에 기존 B 저장
+        B <- temp  // B에 temp에 저장해두었던 원래 A값 저장
+        return (A,B) // 교환 완료
+
+02. 사용자로부터 받은 2개의 정수 중에서 더 큰 수를 찾는 알고리즘을 의사코드로 작성해보자.
+    find_max(A,B)
+        if A > B
+            return A
+        else return B
+
+03. 1부터 n까지의 합을 계산하는 알고리즘을 의사 코드로 작성해보자.
+    all_sum(n)
+        temp <- 0
+        for i <- 1 to n do
+            temp <- temp + i
+        return temp
+
+04. Set(집합) 추상 자료형을 정의하라. 다음과 같은 연산자들을 포함시켜라.
+    Create : 집합을 생성
+    Insert(A, item) : 집합 A에 item을 저장
+    Remove(A, item) : 집합 A에서 item을 삭제
+    Is_In(A, item) : 집합 A에 item이 존재하는 지 확인
+    Union(A, B) : 집합 A와 집합 B의 합집합
+    intersection(A, B) : 집합 A와 집합 B의 교집합
+    Difference(A, B) : 집합 A와 집합 B의 차집합
+
+05. Boolean 추상 자료형을 정의하고 다음과 같은 연사자들을 포함시켜라.
+    And(a, b) : a와 b 모두 True인 경우 True, 그 외엔 False 반환
+    Or(a, b) : a, b 모두 거짓인 경우만 False, 그 외엔 True 반환
+    Not(a) : a가 True인 경우 False, False인 경우 True 반환
+    Xor(a, b) : a와 b가 다르다면 True, 같다면 False 반환
+
+06. 시간복잡도는?
+    
