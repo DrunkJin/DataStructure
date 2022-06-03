@@ -26,3 +26,25 @@ int factorial_iter(int n)
         result = result * i;
     return(result);
 }
+
+/* Quiz 
+01. sub(10) 호출시 어떤 값이 반환되는가? */
+int sub(int n)
+{
+    if ( n < 0 ) return 0;
+    return n + sub( n-3 );
+}
+
+// 10 + 7 + 4 + 1 = 22가 나온다.
+
+// 02. 반복함수로 다시 작성하시오.
+
+int sub_iter(int n)
+{   
+    int ans = 0;
+    for (int i = n; i > 0; i -= 3)
+    {
+        ans += i
+    }
+    return ans;
+}
