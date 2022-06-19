@@ -35,3 +35,5 @@ double power(double x, int n)
     // 순환은 반복할 때마다 크기가 작아지기 때문에 반복보다 시간이 줄어들게 된다. n = 2^k 따라서 k = logn. 시간복잡도는 O(logn)
 }
 
+
+
