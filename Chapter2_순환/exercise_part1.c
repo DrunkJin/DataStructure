@@ -1,3 +1,5 @@
+// 1 ~ 12번 문제
+
 #include <stdio.h>
 // 01. factorial(5), 4, 3, 2, 1 => 5번 호출
 
@@ -86,8 +88,8 @@ void main()
 
     printf("Chapter2 11번 문제 답\n");
     asterisk(5); // 7개. asterisk(5)에서 1개 asterisk(2) 2개에서 각각 1개씩, asterisk(1) 4개에서 각각 1개씩
-
-    printf("Chapter2 12번 문제 답\n");
+    
+    printf("\nChapter2 12번 문제 답\n");
     // unknown;
 
     return NULL;
