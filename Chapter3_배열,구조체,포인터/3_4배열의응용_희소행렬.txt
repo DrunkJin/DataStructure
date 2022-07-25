@@ -1,0 +1,30 @@
+[행렬 표현]
+
+1)
+#define MAX_ROWS 100
+#define MAX_COLS 100
+int matrix[MAX_ROWS][MAX_COLS];
+
+2)
+행,열,값 세가지로 표현하는 방법 -> 전치행렬(transpose)을 구현하는 경우 상당한 프로그래밍이 필요함
+typedef struct {
+    int row;
+    int col;
+    int value;
+} element;
+
+typedef struct SparseMatrix {
+    element data[MAX_TERMS];
+    int rows;       // 행의 개수
+    int cols;       // 열의 개수
+    int terms;      // 항의 개수
+} SparseMatrix;
+----> 알고리즘!
+새로운 구조체 b를 생성한다.
+구조체 a에 저장된 모든 요소에 대하여 다음을 반복
+{
+    b.data[bindex].row = a.data[i].col;
+    b.data[bindex].col = a.data[i].row;
+    b.data[bindex].value = a.data[i].value;
+    bindex++;
+}
